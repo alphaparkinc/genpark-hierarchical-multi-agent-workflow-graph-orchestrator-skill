@@ -1,0 +1,34 @@
+{
+  "name": "genpark-hierarchical-multi-agent-workflow-graph-orchestrator-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Hierarchical DAG multi-agent team orchestrator with sub-task breakdown & consensus aggregation.",
+  "author": "genpark",
+  "category": "operations",
+  "tags": [
+    "multi-agent-dag",
+    "hierarchical-orchestrator",
+    "workflow-graph",
+    "task-delegation"
+  ],
+  "inputs": {
+    "root_goal_prompt": {
+      "type": "string"
+    },
+    "max_sub_agents": {
+      "type": "integer"
+    }
+  },
+  "outputs": {
+    "executed_sub_tasks": {
+      "type": "array"
+    },
+    "consensus_result": {
+      "type": "string"
+    },
+    "total_execution_time_sec": {
+      "type": "number"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
